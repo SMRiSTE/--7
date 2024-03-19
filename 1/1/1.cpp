@@ -17,18 +17,16 @@ int main() {
 
 	setlocale(LC_ALL, "Russian");
 
+	int forbidden_length;
+	std::cout << "Введите запретную длину: ";
+	std::cin >> forbidden_length;
 	while(true){
-
-		int forbidden_length;
-		std::cout << "Введите запретную длину: ";
-		std::cin >> forbidden_length;
-
 		std::string str;
 		std::cout << "Введите слово: ";
 		std::cin >> str;
 
 		try {
-			std::cout << "Длина слова " << ' " ' << str << '"' << " равна " << function(str, forbidden_length) << std::endl;
+			std::cout << "Длина слова \"" << str << "\" равна " << function(str, forbidden_length) << std::endl;
 		}
 		catch (bad_length) {
 			std::cout << "Вы ввели слово запретной длины! До свидания";
