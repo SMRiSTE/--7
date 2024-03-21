@@ -10,6 +10,7 @@ bool triangle::check() {
 }
 
 void triangle::print_info() {
+	setlocale(LC_ALL, "Russian");
 	std::cout << std::endl << figname << ":" << std::endl;
 	if (check() == true) {
 		std::cout << "Правильная" << std::endl;
