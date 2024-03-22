@@ -5,14 +5,15 @@
 class triangle:public figure {
 
 public:
-	triangle() {
+	triangle() = default;
+	triangle(int a , int b, int c,int A,int B,int C) {
 		figname = "Треугольник";
-		a = 10;
-		b = 20;
-		c = 30;
-		A = 50;
-		B = 60;
-		C = 70;
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->A = A;
+		this->B = B;
+		this->C = C;
 	}
 
 	bool check() override;

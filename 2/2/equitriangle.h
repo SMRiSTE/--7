@@ -3,14 +3,14 @@
 
 class equitriangle :public triangle {
 public:
-	equitriangle() {
+	equitriangle(int a, int b, int c, int A, int B, int C) {
 		figname = "Равносторонний треугольник";
-		a = 30;
-		b = 30;
-		c = 30;
-		A = 60;
-		B = 60;
-		C = 60;
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->A = A;
+		this->B = B;
+		this->C = C;
 	}
 
 	bool check() override;

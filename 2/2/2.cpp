@@ -5,10 +5,10 @@
 int main() {
 	setlocale(LC_ALL, "Russian");
 
-	triangle tri;
+	triangle tri(3,4,5,30,60,90);
 	RAtriangle rat;
 	issostriangle is;
-	equitriangle eq;
+	equitriangle eq(30,30,30,60,60,60);
 	quadrangle qu;
 	rectangle re;
 	square sq;
