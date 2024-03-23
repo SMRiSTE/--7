@@ -12,12 +12,6 @@ bool issostriangle::check() {
 void issostriangle::print_info() {
 	setlocale(LC_ALL, "Russian");
 	std::cout << std::endl << figname << ":" << std::endl;
-	if (check() == true) {
-		std::cout << "Правильная" << std::endl;
-	}
-	else {
-		throw std::domain_error("ни одна пара углов не равны");
-	}
 	std::cout << "Стороны: а=" << a << " b=" << b << " c=" << c << std::endl;
 	std::cout << "Углы: A=" << A << " В=" << B << " С=" << C << std::endl;
 }

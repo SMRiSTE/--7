@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="2.h" />
     <ClInclude Include="equitriangle.h" />
+    <ClInclude Include="exep.h" />
     <ClInclude Include="figure.h" />
     <ClInclude Include="issostriangle.h" />
     <ClInclude Include="parallelogram.h" />

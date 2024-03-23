@@ -3,16 +3,24 @@
 
 class rhomb :public parallelogram {
 public:
-	rhomb() {
-		figname = "Ромб";
-		a = 30;
-		b = 30;
-		c = 30;
-		d = 30;
-		A = 30;
-		B = 40;
-		C = 30;
-		D = 50;
+	rhomb(int a, int b, int c, int d, int A, int B, int C, int D) {
+		if (a != b || c != b || d != c) {
+			throw GeometryException("сторорны не равны");
+		}
+		else if (A != C || B != D) {
+			throw GeometryException("углы не равны");
+		}
+		else {
+			figname = "Ромб";
+			this->a = a;
+			this->b = b;
+			this->c = c;
+			this->d = d;
+			this->A = A;
+			this->B = B;
+			this->C = C;
+			this->D = D;
+		}
 	}
 
 	bool check() override;

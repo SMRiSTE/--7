@@ -3,14 +3,22 @@
 
 class issostriangle :public RAtriangle {
 public:
-	issostriangle() {
-		figname = "Равнобедренный треугольник";
-		a = 10;
-		b = 20;
-		c = 10;
-		A = 50;
-		B = 80;
-		C = 50;
+	issostriangle(int a, int b, int c, int A, int B, int C) {
+		if (a != c) {
+			throw GeometryException("стороны не равны");
+		}
+		else if (A != C) {
+			throw GeometryException("углы не равны");
+		}
+		else {
+			figname = "Равнобедренный треугольник";
+			this->a = a;
+			this->b = b;
+			this->c = c;
+			this->A = A;
+			this->B = B;
+			this->C = C;
+		}
 	}
 
 	bool check() override;

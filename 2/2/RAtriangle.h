@@ -3,19 +3,21 @@
 #include<string>
 
 class RAtriangle:public triangle {
-protected:
-	std::string figname;
-	int a, b, c, A, B, C;
-
 public:
-	RAtriangle() {
-		figname = "Прямоугольный треугольник";
-		a = 15;
-		b = 20;
-		c = 30;
-		A = 30;
-		B = 60;
-		C = 90;
+	RAtriangle() = default;
+	RAtriangle(int a, int b, int c, int A, int B, int C) {
+		if (C!=90) {
+			throw GeometryException("угол C не равен 90");
+		}
+		else {
+			figname = "Прямоугольный треугольник";
+			this->a = a;
+			this->b = b;
+			this->c = c;
+			this->A = A;
+			this->B = B;
+			this->C = C;
+		}
 	}
 
 	bool check() override;

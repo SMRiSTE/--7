@@ -12,22 +12,6 @@ bool rectangle::check() {
 void rectangle::print_info() {
 	setlocale(LC_ALL, "Russian");
 	std::cout << std::endl << figname << ":" << std::endl;
-	if (check() == true) {
-		std::cout << "Правильная" << std::endl;
-	}
-	else {
-		if (check() == true) {
-			std::cout << "Правильная" << std::endl;
-		}
-		else {
-			if (a != c || b != d) {
-				throw std::domain_error("противоположенные стороны не равны");
-			}
-			else {
-				throw std::domain_error("углы не равны 90");
-			}
-		}
-	}
 	std::cout << "Стороны: а=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
 	std::cout << "Углы: A=" << A << " В=" << B << " С=" << C << " D=" << D << std::endl;
 }

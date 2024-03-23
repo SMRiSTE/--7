@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include<string>
+#include"exep.h"
 
 class figure {
 protected:
