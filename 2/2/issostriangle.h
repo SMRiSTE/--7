@@ -5,10 +5,10 @@ class issostriangle :public RAtriangle {
 public:
 	issostriangle(int a, int b, int c, int A, int B, int C) {
 		if (a != c) {
-			throw GeometryException("стороны не равны");
+			throw GeometryException("у равнобедренного треугольника стороны не равны");
 		}
 		else if (A != C) {
-			throw GeometryException("углы не равны");
+			throw GeometryException("у равнобедренного треугольника углы не равны");
 		}
 		else {
 			figname = "–авнобедренный треугольник";

@@ -10,7 +10,6 @@ bool rectangle::check() {
 }
 
 void rectangle::print_info() {
-	setlocale(LC_ALL, "Russian");
 	std::cout << std::endl << figname << ":" << std::endl;
 	std::cout << "Стороны: а=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
 	std::cout << "Углы: A=" << A << " В=" << B << " С=" << C << " D=" << D << std::endl;

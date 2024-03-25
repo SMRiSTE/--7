@@ -8,7 +8,7 @@ public:
 	triangle() = default;
 	triangle(int a, int b, int c, int A, int B, int C) {
 		if (A + B + C != 180) {
-			throw GeometryException("сумма не равна 180");
+			throw GeometryException("у треугольника сумма углов не равна 180");
 		}
 		else {
 			figname = "Треугольник";

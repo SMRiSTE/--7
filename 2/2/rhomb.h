@@ -5,10 +5,10 @@ class rhomb :public parallelogram {
 public:
 	rhomb(int a, int b, int c, int d, int A, int B, int C, int D) {
 		if (a != b || c != b || d != c) {
-			throw GeometryException("сторорны не равны");
+			throw GeometryException("у ромба сторорны не равны");
 		}
 		else if (A != C || B != D) {
-			throw GeometryException("углы не равны");
+			throw GeometryException("у ромба углы не равны");
 		}
 		else {
 			figname = "Ромб";

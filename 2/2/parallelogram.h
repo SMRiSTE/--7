@@ -8,10 +8,10 @@ public:
 	parallelogram() = default;
 	parallelogram(int a, int b, int c, int d, int A, int B, int C, int D) {
 		if (a != c || b != d) {
-			throw GeometryException("противоположенные стороны не равны");
+			throw GeometryException("у параллелограмма противоположенные стороны не равны");
 		}
 		else if (A != C || B != D) {
-			throw GeometryException("противоположенные углы не равны 90");
+			throw GeometryException("у параллелограмма противоположенные углы не равны 90");
 		}
 		else {
 			figname = "Параллелограмм";

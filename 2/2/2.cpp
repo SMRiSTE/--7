@@ -28,7 +28,7 @@ int main() {
 	}
 
 	catch (const std::domain_error& e) {
-		std::cout << "Ошибка создания фигуры. Причина: " << e.what() << std::endl;
+		std::cout << std::endl <<"Ошибка создания фигуры. Причина: " << e.what() << std::endl;
 	}
 
 }

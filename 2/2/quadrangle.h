@@ -8,7 +8,7 @@ public:
 	quadrangle() = default;
 	quadrangle(int a, int b, int c,int d, int A, int B, int C,int D) {
 		if (A + B + C + D != 360) {
-			throw GeometryException("сумма углов не равна 360");
+			throw GeometryException("у четырёхугольника сумма углов не равна 360");
 		}
 		else {
 			figname = "Четырёхугольник";

@@ -5,10 +5,10 @@ class rectangle :public parallelogram {
 public:
 	rectangle(int a, int b, int c, int d, int A, int B, int C, int D) {
 		if (a != c || b != d) {
-			throw GeometryException("противоположенные стороны не равны");
+			throw GeometryException("у пр€моугольника противоположенные стороны не равны");
 		}
 		else if (A != 90 || B != A || C != A || D != A) {
-			throw GeometryException("углы не равны 90");
+			throw GeometryException("у пр€моугольника углы не равны 90");
 		}
 		else {
 			figname = "ѕр€моугольник";

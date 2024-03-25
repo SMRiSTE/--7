@@ -7,7 +7,7 @@ public:
 	RAtriangle() = default;
 	RAtriangle(int a, int b, int c, int A, int B, int C) {
 		if (C!=90) {
-			throw GeometryException("угол C не равен 90");
+			throw GeometryException("у прямоугольного треугольника угол C не равен 90");
 		}
 		else {
 			figname = "Прямоугольный треугольник";
